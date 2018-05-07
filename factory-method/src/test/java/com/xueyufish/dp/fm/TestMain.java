@@ -2,6 +2,8 @@ package com.xueyufish.dp.fm;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.xueyufish.dp.fm.FactoryA;
+import com.xueyufish.dp.fm.FactoryB;
 import org.junit.jupiter.api.Test;
 
 /**
