@@ -8,12 +8,12 @@ package com.xueyufish.dp.singleton;
 
 public class HungrySingleton {
 
-  private static final HungrySingleton INSTANCE = new HungrySingleton();
+	private static final HungrySingleton INSTANCE = new HungrySingleton();
 
-  private HungrySingleton() {
-  }
+	private HungrySingleton() {
+	}
 
-  public static HungrySingleton getInstance() {
-    return INSTANCE;
-  }
+	public static HungrySingleton getInstance() {
+		return INSTANCE;
+	}
 }

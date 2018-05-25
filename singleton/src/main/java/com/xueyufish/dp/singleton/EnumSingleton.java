@@ -8,17 +8,17 @@ package com.xueyufish.dp.singleton;
 
 public enum EnumSingleton {
 
-  RESOURCE;
+	RESOURCE;
 
-  private Resource resource;
+	private Resource resource;
 
-  EnumSingleton() {
-    resource = new Resource();
-  }
+	EnumSingleton() {
+		resource = new Resource();
+	}
 
-  public Resource getResource() {
-    return resource;
-  }
+	public Resource getResource() {
+		return resource;
+	}
 }
 
 class Resource {

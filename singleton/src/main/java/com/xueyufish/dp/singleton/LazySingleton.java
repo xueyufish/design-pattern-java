@@ -8,15 +8,15 @@ package com.xueyufish.dp.singleton;
 
 public class LazySingleton {
 
-  private static LazySingleton INSTANCE;
+	private static LazySingleton INSTANCE;
 
-  private LazySingleton() {
-  }
+	private LazySingleton() {
+	}
 
-  public static synchronized LazySingleton getInstance() {
-    if (INSTANCE == null) {
-      INSTANCE = new LazySingleton();
-    }
-    return INSTANCE;
-  }
+	public static synchronized LazySingleton getInstance() {
+		if (INSTANCE == null) {
+			INSTANCE = new LazySingleton();
+		}
+		return INSTANCE;
+	}
 }

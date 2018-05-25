@@ -38,7 +38,8 @@ public class TestMain {
   @DisplayName("Twocheck Singleton Test")
   @Test
   public void testTwoCheckSingleton() {
-    TwoCheckSingleton singleton1 = TwoCheckSingleton.getInstance();
+    TwoCheckSingleton singleton1 = TwoCheckSingleton
+		.getInstance();
     TwoCheckSingleton singleton2 = TwoCheckSingleton.getInstance();
     assertEquals(singleton1, singleton2);
   }

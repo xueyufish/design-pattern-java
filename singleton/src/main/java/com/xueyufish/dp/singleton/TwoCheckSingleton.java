@@ -8,20 +8,20 @@ package com.xueyufish.dp.singleton;
 
 public class TwoCheckSingleton {
 
-  private static volatile TwoCheckSingleton INSTANCE = null;
+	private static volatile TwoCheckSingleton INSTANCE = null;
 
-  private TwoCheckSingleton() {
-  }
+	private TwoCheckSingleton() {
+	}
 
-  public static TwoCheckSingleton getInstance() {
-    if (INSTANCE == null) {
-      synchronized (TwoCheckSingleton.class) {
-        if (INSTANCE == null) {
-          INSTANCE = new TwoCheckSingleton();
-        }
-      }
-    }
-    return INSTANCE;
-  }
+	public static TwoCheckSingleton getInstance() {
+		if (INSTANCE == null) {
+			synchronized (TwoCheckSingleton.class) {
+				if (INSTANCE == null) {
+					INSTANCE = new TwoCheckSingleton();
+				}
+			}
+		}
+		return INSTANCE;
+	}
 
 }
