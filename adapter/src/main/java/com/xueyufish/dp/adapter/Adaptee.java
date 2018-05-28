@@ -4,9 +4,9 @@ package com.xueyufish.dp.adapter;
  * @author xueyufish
  */
 
-public interface Target {
+public class Adaptee {
 
-	int get110v();
-
-	int get220v();
+	public int get220v() {
+		return 220;
+	}
 }
