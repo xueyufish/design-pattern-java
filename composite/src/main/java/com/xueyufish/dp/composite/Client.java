@@ -16,10 +16,10 @@ public class Client {
 		Leaf leaf3 = new Leaf();
 		Leaf leaf4 = new Leaf();
 
-		Component composite = new CompositeComponent();
+		Component composite = new Composite();
 
-		Component composite1 = new CompositeComponent();
-		Component composite2 = new CompositeComponent();
+		Component composite1 = new Composite();
+		Component composite2 = new Composite();
 
 		composite1.add(leaf1);
 		composite1.add(leaf2);
@@ -31,6 +31,5 @@ public class Client {
 		composite.add(composite2);
 
 		composite.print();
-
 	}
 }

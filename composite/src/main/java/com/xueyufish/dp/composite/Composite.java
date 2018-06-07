@@ -7,7 +7,7 @@ import java.util.List;
  * @author xueyufish
  */
 
-public class CompositeComponent implements Component {
+public class Composite implements Component {
 
 	private List<Component> childCompanies = new ArrayList<Component>();
 
