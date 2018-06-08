@@ -3,13 +3,9 @@ package com.xueyufish.dp.flyweight;
 /**
  * @author xueyufish
  */
-
 public class ConcreteFlyweight implements Flyweight {
 
-	/**
-	 * 内蕴状态: 存储在享元对象内部的，并且是不会随环境的改变而有所不同
-	 */
-	private Character intrinsicState = null;
+	private Character intrinsicState;
 
 	public ConcreteFlyweight(Character state) {
 		this.intrinsicState = state;
