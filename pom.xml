@@ -35,6 +35,7 @@
         <module>template-method</module>
         <module>observer</module>
         <module>iterator</module>
+        <module>chain</module>
     </modules>
 
     <dependencies>
