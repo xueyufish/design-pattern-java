@@ -13,29 +13,36 @@ public class TestMain {
 
     @Test
     public void testHungrySingleton() {
-        HungrySingleton hungrySingleton1 = HungrySingleton.getInstance();
-        HungrySingleton hungrySingleton2 = HungrySingleton.getInstance();
-        assertEquals(hungrySingleton1, hungrySingleton2);
+        HungrySingleton instance1 = HungrySingleton.getInstance();
+        HungrySingleton instance2 = HungrySingleton.getInstance();
+        assertEquals(instance1, instance2);
     }
 
     @Test
     public void testLazySingleton() {
-        LazySingleton lazySingleton1 = LazySingleton.getInstance();
-        LazySingleton lazySingleton2 = LazySingleton.getInstance();
-        assertEquals(lazySingleton1, lazySingleton2);
+        LazySingleton instance1 = LazySingleton.getInstance();
+        LazySingleton instance2 = LazySingleton.getInstance();
+        assertEquals(instance1, instance2);
     }
 
     @Test
     public void testEnumSingleton() {
-        Resource res1 = EnumSingleton.RESOURCE.getResource();
-        Resource res2 = EnumSingleton.RESOURCE.getResource();
-        assertEquals(res1, res2);
+        Resource instance1 = EnumSingleton.RESOURCE.getResource();
+        Resource instance2 = EnumSingleton.RESOURCE.getResource();
+        assertEquals(instance1, instance2);
     }
 
     @Test
     public void testTwoCheckSingleton() {
-        TwoCheckSingleton singleton1 = TwoCheckSingleton.getInstance();
-        TwoCheckSingleton singleton2 = TwoCheckSingleton.getInstance();
-        assertEquals(singleton1, singleton2);
+        TwoCheckSingleton instance1 = TwoCheckSingleton.getInstance();
+        TwoCheckSingleton instance2 = TwoCheckSingleton.getInstance();
+        assertEquals(instance1, instance2);
+    }
+
+    @Test
+    public void testStaticInnerSingleton() {
+        StaticInnerSingleton instance1 = StaticInnerSingleton.getInstance();
+        StaticInnerSingleton instance2 = StaticInnerSingleton.getInstance();
+        assertEquals(instance1, instance2);
     }
 }
