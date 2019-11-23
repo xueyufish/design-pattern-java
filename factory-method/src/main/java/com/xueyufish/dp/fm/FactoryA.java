@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.fm;
 
 /**
@@ -6,8 +7,8 @@ package com.xueyufish.dp.fm;
 
 public class FactoryA implements Factory {
 
-	@Override
-	public Product manufacture() {
-		return new ProductA();
-	}
+    @Override
+    public Product build() {
+        return new ProductA();
+    }
 }

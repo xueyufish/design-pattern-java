@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.fm;
 
 /**
@@ -6,6 +7,6 @@ package com.xueyufish.dp.fm;
 
 public interface Factory {
 
-  Product manufacture();
+    Product build();
 
 }

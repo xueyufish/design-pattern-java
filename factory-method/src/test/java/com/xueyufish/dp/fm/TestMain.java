@@ -1,10 +1,9 @@
+
 package com.xueyufish.dp.fm;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Test;
 
-import com.xueyufish.dp.fm.FactoryA;
-import com.xueyufish.dp.fm.FactoryB;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author xueyufish
@@ -12,12 +11,12 @@ import org.junit.jupiter.api.Test;
 
 public class TestMain {
 
-  @Test
-  public void test() {
-    FactoryA factoryA = new FactoryA();
-    assertEquals(factoryA.manufacture().name(), "productA");
+    @Test
+    public void test() {
+        FactoryA factoryA = new FactoryA();
+        assertEquals(factoryA.build().name(), "productA");
 
-    FactoryB factoryB = new FactoryB();
-    assertEquals(factoryB.manufacture().name(), "productB");
-  }
+        FactoryB factoryB = new FactoryB();
+        assertEquals(factoryB.build().name(), "productB");
+    }
 }

@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.fm;
 
 /**
@@ -6,5 +7,5 @@ package com.xueyufish.dp.fm;
 
 public interface Product {
 
-  String name();
+    String name();
 }

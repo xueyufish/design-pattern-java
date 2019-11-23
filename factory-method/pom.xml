@@ -11,7 +11,7 @@
 
   <parent>
     <groupId>com.xueyufish</groupId>
-    <artifactId>design-pattern-java</artifactId>
+    <artifactId>design-pattern</artifactId>
     <version>1.0</version>
   </parent>
 

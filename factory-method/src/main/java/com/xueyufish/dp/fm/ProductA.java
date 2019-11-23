@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.fm;
 
 /**
@@ -6,8 +7,8 @@ package com.xueyufish.dp.fm;
 
 public class ProductA implements Product {
 
-	@Override
-	public String name() {
-		return "productA";
-	}
+    @Override
+    public String name() {
+        return "productA";
+    }
 }
