@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.strategy;
 
 /**
@@ -6,9 +7,9 @@ package com.xueyufish.dp.strategy;
 
 public class MergesortStrategy implements SortStrategy {
 
-	@Override
-	public int[] sort(int[] nums) {
-		System.out.println("MergesortStrategy.sort...");
-		return new int[0];
-	}
+    @Override
+    public int[] sort(int[] nums) {
+        System.out.println("MergesortStrategy.sort...");
+        return new int[0];
+    }
 }

@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.decorator;
 
 /**
@@ -6,17 +7,17 @@ package com.xueyufish.dp.decorator;
 
 public class SugarDecorator extends AbstractDecorator {
 
-	public SugarDecorator(Drink decorator) {
-		super(decorator);
-	}
+    public SugarDecorator(Drink decorator) {
+        super(decorator);
+    }
 
-	@Override
-	public float cost() {
-		return super.cost() + 1;
-	}
+    @Override
+    public float cost() {
+        return super.cost() + 1;
+    }
 
-	@Override
-	public String getDescription() {
-		return super.getDescription() + ", Sugar";
-	}
+    @Override
+    public String getDescription() {
+        return super.getDescription() + ", Sugar";
+    }
 }

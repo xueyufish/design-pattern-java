@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.command;
 
 /**
@@ -6,11 +7,11 @@ package com.xueyufish.dp.command;
 
 public class Receiver {
 
-	public void turnOn() {
-		System.out.println("Receiver.turnOn()");
-	}
+    public void turnOn() {
+        System.out.println("Receiver.turnOn()");
+    }
 
-	public void turnOff() {
-		System.out.println("Receiver.turnOff()");
-	}
+    public void turnOff() {
+        System.out.println("Receiver.turnOff()");
+    }
 }

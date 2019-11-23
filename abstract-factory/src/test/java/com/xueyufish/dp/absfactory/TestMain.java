@@ -1,8 +1,9 @@
+
 package com.xueyufish.dp.absfactory;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author xueyufish
@@ -10,13 +11,13 @@ import org.junit.jupiter.api.Test;
 
 public class TestMain {
 
-	@Test
-	public void test() {
+    @Test
+    public void test() {
 
-		AbstractFactory factory = new ConcreteFactory();
-		assertEquals(factory.createProductA().name(), "ConcreteProductA");
+        AbstractFactory factory = new ConcreteFactory();
+        assertEquals(factory.createProductA().name(), "ConcreteProductA");
 
-		assertEquals(factory.createProductB().name(), "ConcreteProductB");
+        assertEquals(factory.createProductB().name(), "ConcreteProductB");
 
-	}
+    }
 }

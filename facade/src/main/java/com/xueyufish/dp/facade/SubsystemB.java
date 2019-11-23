@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.facade;
 
 /**
@@ -6,7 +7,7 @@ package com.xueyufish.dp.facade;
 
 public class SubsystemB {
 
-	public void execute() {
-		System.out.println("Execute SubsystemB");
-	}
+    public void execute() {
+        System.out.println("Execute SubsystemB");
+    }
 }

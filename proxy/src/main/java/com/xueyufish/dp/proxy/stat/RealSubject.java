@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.proxy.stat;
 
 /**
@@ -5,8 +6,8 @@ package com.xueyufish.dp.proxy.stat;
  */
 public class RealSubject implements Subject {
 
-	@Override
-	public void execute() {
-		System.out.println("RealSubject execute...");
-	}
+    @Override
+    public void execute() {
+        System.out.println("RealSubject execute...");
+    }
 }

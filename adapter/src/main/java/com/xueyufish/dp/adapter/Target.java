@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.adapter;
 
 /**
@@ -6,7 +7,7 @@ package com.xueyufish.dp.adapter;
 
 public interface Target {
 
-	int get110v();
+    int get110v();
 
-	int get220v();
+    int get220v();
 }
