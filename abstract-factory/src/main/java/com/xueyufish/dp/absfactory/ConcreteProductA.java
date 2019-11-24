@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.absfactory;
 
 /**
@@ -6,9 +7,14 @@ package com.xueyufish.dp.absfactory;
 
 public class ConcreteProductA extends AbstractProductA {
 
-	@Override
-	public String name() {
-		return "ConcreteProductA";
-	}
+    @Override
+    public String productA1() {
+        return "ConcreteProductA1";
+    }
+
+    @Override
+    public String productA2() {
+        return "ConcreteProductA2";
+    }
 
 }

@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.absfactory;
 
 /**
@@ -6,6 +7,8 @@ package com.xueyufish.dp.absfactory;
 
 abstract class AbstractProductA {
 
-	abstract String name();
+    abstract String productA1();
+
+    abstract String productA2();
 
 }

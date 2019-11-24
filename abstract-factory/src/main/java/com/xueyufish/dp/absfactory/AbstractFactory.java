@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.absfactory;
 
 /**
@@ -6,7 +7,7 @@ package com.xueyufish.dp.absfactory;
 
 public abstract class AbstractFactory {
 
-	public abstract AbstractProductA createProductA();
+    public abstract AbstractProductA createProductA();
 
-	public abstract AbstractProductB createProductB();
+    public abstract AbstractProductB createProductB();
 }
