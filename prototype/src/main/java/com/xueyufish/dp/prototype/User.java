@@ -10,6 +10,10 @@ public class User implements Cloneable {
 
     private String password;
 
+    public User() {
+        System.out.println("user constructor.");
+    }
+
     @Override
     public Object clone() {
         User user = null;
@@ -21,16 +25,8 @@ public class User implements Cloneable {
         return user;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
     public void setUserName(String userName) {
         this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
     }
 
     public void setPassword(String password) {

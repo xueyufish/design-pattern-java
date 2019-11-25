@@ -1,19 +1,17 @@
+
 package com.xueyufish.dp.builder;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
 /**
  * @author xueyufish
  */
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 public class Product {
 
-	private int wheels;
-	private String color;
+    private int wheels;
+
+    private String color;
 
 }

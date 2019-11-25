@@ -4,7 +4,6 @@ package com.xueyufish.dp.prototype;
 /**
  * @author xueyufish
  */
-
 public class Client {
 
     public static void main(String... args) {

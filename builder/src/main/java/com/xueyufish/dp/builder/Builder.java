@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.builder;
 
 /**
@@ -6,10 +7,10 @@ package com.xueyufish.dp.builder;
 
 public interface Builder {
 
-	Product build();
+    void buildColor(final String color);
 
-	Builder setColor(final String color);
+    void buildWheels(final int wheels);
 
-	Builder setWheels(final int wheels);
+    Product getResult();
 
 }
