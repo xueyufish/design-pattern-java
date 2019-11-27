@@ -6,7 +6,6 @@ package com.xueyufish.dp.adapter.obj;
  *
  * @author xueyufish
  */
-
 public interface Target {
 
     void requesst();
