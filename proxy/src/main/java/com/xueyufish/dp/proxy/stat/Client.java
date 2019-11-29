@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.proxy.stat;
 
 /**
@@ -6,12 +7,12 @@ package com.xueyufish.dp.proxy.stat;
 
 public class Client {
 
-	public static void main(String... args) {
-		new Client().test();
-	}
+    public static void main(String... args) {
+        new Client().test();
+    }
 
-	private void test() {
-		Subject subject = new CustomProxy(new RealSubject());
-		subject.execute();
-	}
+    private void test() {
+        Subject subject = new CustomProxy(new RealSubject());
+        subject.execute();
+    }
 }
