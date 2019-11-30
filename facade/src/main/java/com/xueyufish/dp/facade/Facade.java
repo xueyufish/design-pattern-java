@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.facade;
 
 /**
@@ -6,19 +7,21 @@ package com.xueyufish.dp.facade;
 
 public class Facade {
 
-	private SubsystemA systemA;
-	private SubsystemB systemB;
-	private SubsystemC systemC;
+    private SubsystemA systemA;
 
-	public Facade() {
-		systemA = new SubsystemA();
-		systemB = new SubsystemB();
-		systemC = new SubsystemC();
-	}
+    private SubsystemB systemB;
 
-	public void execute() {
-		systemA.execute();
-		systemB.execute();
-		systemC.execute();
-	}
+    private SubsystemC systemC;
+
+    public Facade() {
+        systemA = new SubsystemA();
+        systemB = new SubsystemB();
+        systemC = new SubsystemC();
+    }
+
+    public void execute() {
+        systemA.execute();
+        systemB.execute();
+        systemC.execute();
+    }
 }

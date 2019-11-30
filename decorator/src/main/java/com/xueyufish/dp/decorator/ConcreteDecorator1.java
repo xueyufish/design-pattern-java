@@ -1,12 +1,6 @@
 
 package com.xueyufish.dp.decorator;
 
-/**
- * 功能描述
- *
- * @author xueyufish
- * @since 2019-11-27
- */
 public class ConcreteDecorator1 extends Decorator {
 
     public ConcreteDecorator1(Component component) {

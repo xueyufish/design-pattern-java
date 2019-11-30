@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.facade;
 
 /**
@@ -6,12 +7,12 @@ package com.xueyufish.dp.facade;
 
 public class Client {
 
-	public static void main(String... args) {
-		new Client().test();
-	}
+    public static void main(String... args) {
+        new Client().test();
+    }
 
-	void test() {
-		Facade facade = new Facade();
-		facade.execute();
-	}
+    void test() {
+        Facade facade = new Facade();
+        facade.execute();
+    }
 }
