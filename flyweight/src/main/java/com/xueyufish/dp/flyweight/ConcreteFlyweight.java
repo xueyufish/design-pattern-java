@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.flyweight;
 
 /**
@@ -5,15 +6,15 @@ package com.xueyufish.dp.flyweight;
  */
 public class ConcreteFlyweight implements Flyweight {
 
-	private Character intrinsicState;
+    private String intrinsicState;
 
-	public ConcreteFlyweight(Character state) {
-		this.intrinsicState = state;
-	}
+    public ConcreteFlyweight(String intrinsicState) {
+        this.intrinsicState = intrinsicState;
+    }
 
-	@Override
-	public void operation(String state) {
-		System.out.println("Intrinsic State = " + this.intrinsicState);
-		System.out.println("Extrinsic State = " + state);
-	}
+    @Override
+    public void operation(String extrinsicState) {
+        System.out.println("ConcreteFlyweight.intrinsicState: " + intrinsicState);
+        System.out.println("ConcreteFlyweight.extrinsicState: " + extrinsicState);
+    }
 }

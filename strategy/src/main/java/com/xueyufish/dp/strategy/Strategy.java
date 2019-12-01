@@ -1,11 +1,12 @@
+
 package com.xueyufish.dp.strategy;
 
 /**
  * @author xueyufish
  */
 
-public interface SortStrategy {
+public interface Strategy {
 
-	int[] sort(int[] nums);
+    void opetate();
 
 }

@@ -18,6 +18,6 @@ public abstract class Abstraction {
     private Implementor implementor;
 
     protected void operation() {
-        implementor.operation();
+        implementor.anotherOperation();
     }
 }

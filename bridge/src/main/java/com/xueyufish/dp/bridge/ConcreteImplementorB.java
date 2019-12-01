@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.bridge;
 
 /**
@@ -6,8 +7,8 @@ package com.xueyufish.dp.bridge;
 
 public class ConcreteImplementorB implements Implementor {
 
-	@Override
-	public void operation() {
-		System.out.println("ConcreteImplementorB.operation...");
-	}
+    @Override
+    public void anotherOperation() {
+        System.out.println("ConcreteImplementorB.anotherOperation...");
+    }
 }

@@ -1,34 +1,28 @@
+
 package com.xueyufish.dp.flyweight;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
  * @author xueyufish
  */
-
 public class FlyweightFactory {
 
-	private Map<Character, Flyweight> files = new HashMap<Character, Flyweight>();
+    private static Map<String, Flyweight> flyweights = new HashMap<>();
 
-	public Flyweight factory(List<Character> compositeState) {
-		ConcreteCompositeFlyweight compositeFly = new ConcreteCompositeFlyweight();
+    public static Flyweight getFlyweight(String key) {
+        if (flyweights.containsKey(key)) {
+            return flyweights.get(key);
+        } else {
+            Flyweight flyweight = new ConcreteFlyweight(key);
+            flyweights.put(key, flyweight);
+            return flyweight;
+        }
+    }
 
-		for (Character state : compositeState) {
-			compositeFly.add(state, this.factory(state));
-		}
-
-		return compositeFly;
-	}
-
-	public Flyweight factory(Character state) {
-		Flyweight fly = files.get(state);
-		if (fly == null) {
-			fly = new ConcreteFlyweight(state);
-			files.put(state, fly);
-		}
-		return fly;
-	}
+    public static int size() {
+        return flyweights.size();
+    }
 
 }

@@ -1,22 +1,23 @@
+
 package com.xueyufish.dp.strategy;
 
 /**
  * @author xueyufish
  */
-
 public class Context {
 
-	private SortStrategy strategy;
+    private Strategy strategy;
 
-	public Context(SortStrategy strategy) {
-		this.strategy = strategy;
-	}
+    public Context(Strategy strategy) {
+        this.strategy = strategy;
+    }
 
-	public void setStrategy(SortStrategy strategy) {
-		this.strategy = strategy;
-	}
+    public void someOperate() {
+        strategy.opetate();
+    }
 
-	public int[] sort(int[] nums) {
-		return this.strategy.sort(nums);
-	}
+    public void setStrategy(Strategy strategy) {
+        this.strategy = strategy;
+    }
+
 }
