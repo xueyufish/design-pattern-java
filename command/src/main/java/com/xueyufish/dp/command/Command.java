@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.command;
 
 /**
@@ -6,5 +7,5 @@ package com.xueyufish.dp.command;
 
 public interface Command {
 
-	void execute();
+    void execute();
 }

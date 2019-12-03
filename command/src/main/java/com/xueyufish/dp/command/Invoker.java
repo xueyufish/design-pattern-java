@@ -1,3 +1,4 @@
+
 package com.xueyufish.dp.command;
 
 /**
@@ -6,7 +7,7 @@ package com.xueyufish.dp.command;
 
 public class Invoker {
 
-	public void execute(Command command){
-		command.execute();
-	}
+    public void execute(Command command) {
+        command.execute();
+    }
 }

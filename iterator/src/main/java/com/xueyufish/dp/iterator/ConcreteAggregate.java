@@ -1,37 +1,39 @@
+
 package com.xueyufish.dp.iterator;
 
 /**
  * @author xueyufish
  */
-
 public class ConcreteAggregate implements List {
 
-	private Object[] list;
-	private int size;
-	private int index;
+    private Object[] list;
 
-	public ConcreteAggregate() {
-		list = new Object[100];
-	}
+    private int size;
 
-	@Override
-	public void add(Object obj) {
-		list[index++] = obj;
-		size++;
-	}
+    private int index;
 
-	@Override
-	public Iterator iterator() {
-		return new ConcreteIterator(this);
-	}
+    public ConcreteAggregate() {
+        list = new Object[100];
+    }
 
-	@Override
-	public Object get(int index) {
-		return list[index];
-	}
+    @Override
+    public void add(Object obj) {
+        list[index++] = obj;
+        size++;
+    }
 
-	@Override
-	public int size() {
-		return size;
-	}
+    @Override
+    public Iterator iterator() {
+        return new ConcreteIterator(this);
+    }
+
+    @Override
+    public Object get(int index) {
+        return list[index];
+    }
+
+    @Override
+    public int size() {
+        return size;
+    }
 }

@@ -4,7 +4,7 @@
 
 public interface Chain {
 
-	void setNextChain(Chain higherLevel);
+    void setNextChain(Chain higherLevel);
 
-	void solveTheProblem(String levelOfProblem);
+    void solveTheProblem(String levelOfProblem);
 }

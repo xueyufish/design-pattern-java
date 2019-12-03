@@ -12,6 +12,7 @@ public class Client {
     }
 
     private void test() {
+
         ConcreteSubject subject = new ConcreteSubject();
 
         Observer observer1 = new ConcreteObserver1("zhangsan", "123");

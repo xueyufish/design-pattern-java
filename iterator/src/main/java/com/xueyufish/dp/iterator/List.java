@@ -1,16 +1,16 @@
+
 package com.xueyufish.dp.iterator;
 
 /**
  * @author xueyufish
  */
-
 public interface List<T> {
 
-	void add(T element);
+    void add(T element);
 
-	T get(int index);
+    T get(int index);
 
-	int size();
+    int size();
 
-	Iterator iterator();
+    Iterator iterator();
 }

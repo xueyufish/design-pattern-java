@@ -4,9 +4,10 @@ package com.xueyufish.dp.observer;
 import lombok.AllArgsConstructor;
 
 /**
+ * 具体观察者
+ *
  * @author xueyufish
  */
-
 @AllArgsConstructor
 public class ConcreteObserver1 implements Observer {
 

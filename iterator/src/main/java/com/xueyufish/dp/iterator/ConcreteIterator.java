@@ -1,27 +1,28 @@
+
 package com.xueyufish.dp.iterator;
 
 /**
  * @author xueyufish
  */
-
 public class ConcreteIterator implements Iterator {
 
-	private List list;
-	private int index;
+    private List list;
 
-	public ConcreteIterator(List list) {
-		this.list = list;
-	}
+    private int index;
 
-	@Override
-	public boolean hasNext() {
-		return index < list.size();
-	}
+    public ConcreteIterator(List list) {
+        this.list = list;
+    }
 
-	@Override
-	public Object next() {
-		Object object = list.get(index);
-		index++;
-		return object;
-	}
+    @Override
+    public boolean hasNext() {
+        return index < list.size();
+    }
+
+    @Override
+    public Object next() {
+        Object object = list.get(index);
+        index++;
+        return object;
+    }
 }
